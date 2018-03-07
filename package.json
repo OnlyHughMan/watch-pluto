@@ -93,6 +93,10 @@
     ],
     "moduleDirectories": [
       "node_modules"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
     ]
   }
 }
