@@ -44,4 +44,17 @@ describe('HomePage', () => {
       expect(watchFace.scrollTop).toEqual(-40);
     });
   });
+
+  describe('#leftButtonEvent', () => {
+    it('goes to demo page', () => {
+      const props = {
+        navigate: () => {},
+    };
+      const page = new HomePage(props);
+      spyOn(page, 'navigate');
+      
+      page.leftButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('demo');
+    });
+  });
 });
