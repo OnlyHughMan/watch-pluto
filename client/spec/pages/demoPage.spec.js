@@ -7,9 +7,9 @@ describe('The Demo Page', () => {
     page = new DemoPage();
   });
 
-  describe('rendering', () => {
-    it('should produce the correct HTML', () => {
-      expect(page.template()).toContain('Hello, i am the demoPage');
+  describe('template', () => {
+    it('should contain the correct text', () => {
+      expect(page.template()).toContain('This is a demo');
     });
   });
 });
